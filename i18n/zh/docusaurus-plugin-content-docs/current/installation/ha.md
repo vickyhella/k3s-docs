@@ -43,6 +43,15 @@ curl -sfL https://get.k3s.io | sh -s - server \
   --datastore-endpoint="mysql://username:password@tcp(hostname:3306)/database-name"
 ```
 
+:::note
+中国用户，可以使用以下方法加速安装：
+```
+curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -s - server \
+  --token=SECRET \
+  --datastore-endpoint="mysql://username:password@tcp(hostname:3306)/database-name"
+```
+:::
+
 根据数据库类型的不同，数据存储端点的格式也不同。有关详细信息，请参阅[数据存储端点格式](datastore.md#数据存储端点格式和功能)。
 
 要在启动 server 节点时配置 TLS 证书，请参阅[数据存储配置指南](datastore.md#外部数据库配置参数)。
@@ -81,6 +90,15 @@ curl -sfL https://get.k3s.io | sh -s - server \
   --token=SECRET \
   --datastore-endpoint="mysql://username:password@tcp(hostname:3306)/database-name"
 ```
+
+:::note
+中国用户，可以使用以下方法加速安装：
+```
+curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -s - server \
+  --token=SECRET \
+  --datastore-endpoint="mysql://username:password@tcp(hostname:3306)/database-name"
+```
+:::
 
 有几个配置标志在所有 Server 节点中必须是相同的:
 

@@ -189,6 +189,13 @@ K3s Agent 可以通过 `--node-label` 和 `--node-taint` 选项来配置，它�
 curl -sfL https://get.k3s.io | sh -
 ```
 
+:::note
+中国用户，可以使用以下方法加速安装：
+```
+curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -
+```
+:::
+
 手动运行 server 时，你应该得到类似于以下内容的输出：
 
 ```bash
